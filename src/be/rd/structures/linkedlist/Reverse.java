@@ -37,7 +37,7 @@ public class Reverse
         head.logForward();
     }
 
-    public SimpleNode reverseIterative(SimpleNode head){
+    public static SimpleNode reverseIterative(SimpleNode head){
 
         SimpleNode cur = head;
         while(cur.next != null){

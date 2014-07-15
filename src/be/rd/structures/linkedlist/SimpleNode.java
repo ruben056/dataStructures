@@ -3,13 +3,13 @@ package be.rd.structures.linkedlist;
 /**
  * Created by rdm on 15/07/14.
  */
-public class SimpleNode
+public class SimpleNode<T>
 {
     public SimpleNode next;
     public SimpleNode previous;
-    public int data;
+    public T data;
 
-    public SimpleNode(int data, SimpleNode previous, SimpleNode next){
+    public SimpleNode(T data, SimpleNode previous, SimpleNode next){
         this.data = data;
         this.previous = previous;
         this.data = data;
@@ -38,5 +38,15 @@ public class SimpleNode
             System.out.print(",");
             this.next.logForward(); // continue
         }
+    }
+
+    @Override
+    public String toString()
+    {
+        String result = data.toString();
+        if(hasNext()){
+            result =  result + next.toString();
+        }
+        return result;
     }
 }
