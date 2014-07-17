@@ -67,7 +67,7 @@ public class Reverse
             return cur;
         }else{
             // continue
-            return reverseIterative(next);
+            return reverseRecursively(next);
         }
     }
 }
