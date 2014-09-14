@@ -14,7 +14,7 @@ public class Exercise {
 
     public static void main(String[] args)
     {
-        new Exercise().start();;
+        new Exercise().start();
     }
 
 

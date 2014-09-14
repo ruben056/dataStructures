@@ -69,7 +69,10 @@ public class ArrayTest {
         int midIndex;
         while (loIndex <= hiIndex)
         {
-            midIndex = (loIndex + hiIndex) / 2;
+            // use unsigned rightshift to avoid overflow causing shift in negative area
+            /*midIndex = (loIndex + hiIndex) / 2;*/
+            midIndex = (loIndex + hiIndex) >>> 1;
+
             if (toSearch > searchArr [midIndex])
                 loIndex = midIndex + 1;
             else
