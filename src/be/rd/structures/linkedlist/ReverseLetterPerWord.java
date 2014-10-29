@@ -44,7 +44,7 @@ public class ReverseLetterPerWord
                 continue;
             }
 
-            // as long as it is not a character build a linked list so we can
+            // as long as it is a letter build a linked list so we can
             // reverse it as soon as we encounter a char
             SimpleNode cur = new SimpleNode(c, prev, null);
             if(prev != null){
