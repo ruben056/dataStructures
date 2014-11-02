@@ -1,7 +1,5 @@
 package be.rd.structures.arrays;
 
-import sun.net.www.content.audio.basic;
-
 import java.util.Arrays;
 
 /**
@@ -16,7 +14,7 @@ public class ArrayTest {
     public static void main(String[] args){
         basicInit();
 
-        int[] searchArr = RandomNumberGenerator.generateRandomNumber(ONE_MILLION);
+        int[] searchArr = RandomNumberGenerator.generateUniqueNrList(ONE_MILLION);
         linearSearch(searchArr);
         binarySearch(searchArr);
     }

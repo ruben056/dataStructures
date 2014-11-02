@@ -14,7 +14,7 @@ public class RandomNumberGenerator {
      * @param resultSize
      * @return
      */
-    public static int[] generateRandomNumber(int resultSize){
+    public static int[] generateUniqueNrList(int resultSize){
 
         int[] result = new int[resultSize];
         for (int idx = 1; idx <= resultSize; ++idx){
