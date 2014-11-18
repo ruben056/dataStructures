@@ -14,7 +14,7 @@ public class RandomNumberGenerator {
      * @param resultSize
      * @return
      */
-    public static int[] generateUniqueNrList(int resultSize){
+    public static int[] generateUniqueNrArray(int resultSize){
 
         int[] result = new int[resultSize];
         for (int idx = 1; idx <= resultSize; ++idx){
@@ -24,9 +24,20 @@ public class RandomNumberGenerator {
         return shuffleArray(result);
     }
 
+    public static List<Integer> generateUniqueNrList(int resultSize){
+
+        List<Integer> result = new ArrayList<>(resultSize);
+        for (int idx = 1; idx <= resultSize; ++idx){
+            result.add(Integer.valueOf(idx));
+        }
+
+        Collections.shuffle(result);
+        return result;
+    }
+
     /**
      * This is a bit of a bummer, shuffling arrays is not allready available in java
-     * And colletions only contain Classes (not primitives) ... aijajaij...
+     * And collections only contain Classes (not primitives) ... aijajaij...
      * For the purpose of the testing this will have to do ...
      *
      * @param array

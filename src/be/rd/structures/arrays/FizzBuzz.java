@@ -8,7 +8,7 @@ public class FizzBuzz {
     private static String NEW_LINE = System.getProperty("line.separator");
 
     public static void main(String[] args) {
-        int[] nrs = RandomNumberGenerator.generateUniqueNrList(15);
+        int[] nrs = RandomNumberGenerator.generateUniqueNrArray(15);
         StringBuilder sb = new StringBuilder();
         for (int nr : nrs){
             boolean isNotAnyMultiple = true;

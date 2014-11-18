@@ -14,7 +14,7 @@ public class ArrayTest {
     public static void main(String[] args){
         basicInit();
 
-        int[] searchArr = RandomNumberGenerator.generateUniqueNrList(ONE_MILLION);
+        int[] searchArr = RandomNumberGenerator.generateUniqueNrArray(ONE_MILLION);
         linearSearch(searchArr);
         binarySearch(searchArr);
     }
