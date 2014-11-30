@@ -10,8 +10,6 @@ import java.util.List;
  */
 public class QuickSort {
 
-    // TODO rework for working with lists ...
-    //
     public static void main(String[] args) {
 
         QuickSort o = new QuickSort();
